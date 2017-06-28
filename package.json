@@ -1,21 +1,27 @@
 {
-  "name": "jenkins-node",
+  "name": "koa-template",
   "version": "1.0.0",
-  "description": " koa ",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "description": "koa server template",
+  "main": "server.js",
+  "author": "johnnyjiang",
+  "license": "MIT",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js",
+    "debug": "node --inspect server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pplgin/jenkins-node.git"
+  "keywords": [
+    "koa",
+    "node"
+  ],
+  "dependencies": {
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.1.1",
+    "koa-static": "^3.0.0",
+    "koa-views": "^6.0.2",
+    "swig": "^1.4.2"
   },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pplgin/jenkins-node/issues"
-  },
-  "homepage": "https://github.com/pplgin/jenkins-node#readme"
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
 }
